@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section>
+
+        <div class="bannerVideo" id="slideShow">
+            <video src="./img/video1.mp4" autoplay muted loop class="active"></video>
+            <video src="./img/video2.mp4" autoplay muted loop></video>
+            <video src="./img/video3.mp4" autoplay muted loop></video>
+            <video src="./img/video4.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="container">
+
+            <header id="navbar">
+                <a href="#" class="logo">World</a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu();"></span>
+            </header>
+
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active">
+                        <h2>INDIA</h2>
+                        <p>India is a diverse and culturally rich country located in South Asia. It is known for its ancient history, diverse landscapes, and a population of over 1.3 billion people.</p>
+                    </div>
+                    <div>
+                        <h2>CANADA</h2>
+                        <p>Canada is the second-largest country in the world by land area, known for its stunning natural landscapes, including vast forests, rugged mountains, and numerous lakes. It is a diverse nation with a rich cultural tapestry, embracing both English and French as official languages, and is known for its universal healthcare system and reputation for politeness!</p>
+                    </div>
+                    <div>
+                        <h2>Thailand</h2>
+                        <p>Thailand, located in Southeast Asia, is renowned for its vibrant culture, beautiful beaches, and delicious cuisine. It boasts a rich history, with ancient temples and modern cities coexisting harmoniously, making it a popular destination for tourists seeking a blend of tradition and modernity.!</p>
+                    </div>
+                    <div>
+                        <h2>Maldives</h2>
+                        <p>The Maldives, an island nation in the Indian Ocean, is celebrated for its stunning overwater bungalows, crystal-clear waters, and vibrant marine life. This tropical paradise is a popular destination for honeymooners and travelers seeking luxury resorts and world-class snorkeling and diving experiences amidst its picturesque coral ree!</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="controls">
+                <li onclick="prevSlide();prevSlideText();"><img src="./img/left.png" /></li>
+                <li onclick="nextSlide();nextSlideText();"><img src="./img/right.png" /></li>
+            </ul>
+        </div>
+
+
+        <footer style="background-color: white; text-align: center;">
+            &copy; 2023 Developed by Abdul Aagariya
+        </footer>
+
+
+    </section>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
